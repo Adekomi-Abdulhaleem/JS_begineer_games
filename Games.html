@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Games</title>
+    <script> 
+    alert("Hello i have a game, do you wish to play it?");
+    var name = prompt("What is your name so that i can know you more");
+    alert("Okay you are welcome." + name +"Let's start the game" );
+   /* var questionleft = 3;
+   var game1 = prompt("Guess 3 numbers of your choice" +  " " + questionleft + "more trials");
+    questionleft -= 1;
+    var game1 = prompt("Guess 3 numbers of your choice" +  " " + questionleft + "more trials");
+    questionleft -= 1;
+    var game1 = prompt("Guess 3 numbers of your choice" +  " " + questionleft + "more trials");
+    questionleft -= 1;
+
+    </script>
+</head>
+<body>
+<script>
+    /*function randomNumber(upper){
+        return Math.floor( Math.random() * upper ) + 1;
+    }
+var counter = 0;
+ while ( counter < 3 ) {
+  var randNum = randomNumber(6);
+    document.write(randNum + '');
+    counter +=1
+    }
+   if (game1 == counter){
+       document.write(name + "You won the game!!!..'Ride on'")
+   }else{
+       document.write(name + "You lost the game bro!!!...'Do more'" )
+   }
+   console.log ("Start game");
+   alert("Let's see how many times it will take you to guess my number");
+   var randomNumber = getRandomNumber (9);
+   var guess;
+   var guessCount = 0;
+   var correctGuess = false;
+   function getRandomNumber(upper){
+   var num = Math.floor( Math.random() * upper ) + 1;
+   return num;
+    }
+    do { guess = prompt("Guess a number");
+         guessCount +=1; 
+        if (parseInt(guess) === randomNumber){
+            correctGuess  = true;
+        }
+    }
+    while ( ! correctGuess )
+        document.write("It took you" + guessCount + "times to get the number");*/
+/*    var secondsPerMinute = 60;
+    var minutePerHour = 60;
+    var hoursPerDay = 24;
+    var daysPerWeek = 7;
+    var weekPerMonth = 4;
+    var weekPerYear = 52;
+    var age = 18;
+    var secondsTillNow = age * secondsPerMinute * minutePerHour * hoursPerDay * daysPerWeek * weekPerYear + secondsPerMinute * minutePerHour * hoursPerDay * 14;
+    document.write(" I've actually spent " + secondsTillNow + " seconds since i was born " );
+    var highest = prompt("Pick a maxima");
+    var topNumber = parseInt(highest);
+    var randomNumber = Math.floor(Math.random() * topNumber) + 1;
+    document.write( randomNumber + " is a number between 1 and " + topNumber);*/
+    
+    //Let's make another game, guess a nomba and get get a reply if correct, higher or lower
+
+    /*var pick = prompt("Pick the maximum number you want");
+    var randomNumber = Math.floor(Math.random() * pick) + 1;
+    var guess = prompt(" Now, guess a number between 1 and " + pick);
+    if (guess === randomNumber) {
+        document.write("You got my number right!!! Bravo");
+    } else if ( guess <= randomNumber) {
+        document.write("You are a bit close, increase the number ");
+    } else if ( guess >= randomNumber) {
+        document.write("You have exceeded the number, move a bit back");
+    }
+    */
+    //I've not gotten how to make this continue (as a loop) 
+   
+    //A new game(quiz challenge to wrap up if's)
+    
+    /*var correctanswer = 0;
+    var question2 = prompt("Which programming language is most used for creating websites");
+    if (question2.toUpperCase() === "HTML AND CSS" || "HTML CSS" || "HTML,CSS" || "HTML, CSS"  ){
+        correctanswer += 1;
+    }
+    var question2 = prompt("Which programming language is best for writing games");
+    if (question2.toUpperCase() === "JAVA" ){
+        correctanswer += 1;
+    }
+    var question3 = prompt("Which programming language is most used for front-end");
+    if (question3.toUpperCase() === "NODE.JS" || "NODE" || "JS" ){
+        correctanswer += 1;
+    }
+    var question4 = prompt("Which programming language do you think i use for back-end");
+    if (question4.toUpperCase() === "PYTHON" ){
+        correctanswer += 1;
+    }
+    var question5 = prompt("Which app is best for designing as a UI/UX person");
+    if (question5.toUpperCase() === "ADOBE XD" || "ADOBE" || "XD" ){
+        correctanswer += 1;
+    }
+    document.write(" You got " + correctanswer + " questions correctly out of 5 <br>" );
+    if (correctanswer === 5){
+        document.write("You are a scholar, i go like learn from you o...u're getting a gold medal for that");
+    } else if (correctanswer === 4){
+        document.write("You sef try, i go like learn from you too....u're getting a silver medal for that");
+    } else if(correctanswer === 3){
+        document.write("You dey average sha, i go give you bronze sha ");
+    } else if(correctanswer === 2){
+        document.write("You neva sabi o!!!, go and learn more...no award for you");
+    } else if (correctanswer ===1){
+        document.write("Only one, go and learn dude");
+    }else {
+        document.write("OLODO OSHII!!!");
+    } */
+    
+    //Another game for two numbers, (upper and lower limit)
+
+    function getRandomNumber(lower, upper){  
+    var randomNumber = Math.floor (Math.random() * (upper - lower + 1)) + upper;
+    }
+    document.write(getrandomNumber(100,500));
+    </script>
+    
+</body>
+</html>

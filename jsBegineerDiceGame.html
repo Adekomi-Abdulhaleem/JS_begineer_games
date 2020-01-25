@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>
+jsBegineerDiceGame.html
+</title>
+<script>
+
+ // Let's play a dice game 
+
+ var player1 = prompt("Are you ready player one");
+ var player2 = prompt("Are you ready player two");
+ 
+var nameofplayer1 = prompt("What's your name player 1?")
+var nameofplayer2 = prompt("What's your name player 2?")
+
+var randomNumber1 = Math.floor (Math.random() * 6) + 1;
+
+alert(randomNumber1);
+
+var randomNumber2 = Math.floor (Math.random() * 6) + 1;
+
+alert(randomNumber2);
+
+alert(" Player 1 played " + randomNumber1 + " and " + randomNumber2);
+
+
+var randomNumber3 = Math.floor (Math.random() * 6) + 1;
+
+alert(randomNumber3);
+
+var randomNumber4 = Math.floor (Math.random() * 6) + 1;
+
+alert(randomNumber4);
+
+alert(" Player 2 played " + randomNumber3 + " and " + randomNumber4);
+
+if ( (randomNumber1 + randomNumber2) < (randomNumber3 + randomNumber4) ) {
+    document.write(" You won the game " + nameofplayer2);
+}
+else if ( (randomNumber1 + randomNumber2) > (randomNumber3 + randomNumber4) ) {
+    document.write(" You won the game " + nameofplayer1);
+}
+else if ( (randomNumber1 + randomNumber2) == (randomNumber3 + randomNumber4) ) {
+    document.write(" This is a tie match between " + nameofplayer1 + " and " + nameofplayer2);
+}
+ </script>
+</body>
+</html>
